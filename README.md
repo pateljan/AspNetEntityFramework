@@ -9,3 +9,5 @@ https://docs.microsoft.com/en-us/ef/core/cli/dotnet
 
 - command to update tool ->
   dotnet tool update --global dotnet-ef
+
+- start using ef command -> dotnet ef
