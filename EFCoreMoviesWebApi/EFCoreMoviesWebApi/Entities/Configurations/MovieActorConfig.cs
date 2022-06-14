@@ -8,6 +8,10 @@ namespace EFCoreMoviesWebApi.Entities.Configurations
         public void Configure(EntityTypeBuilder<MovieActor> builder)
         {
             builder.HasKey(p => new { p.MovieId, p.ActorId });
+
+            builder.HasOne(p => p.Actor).WithMany(a => a.MovieActors).HasForeignKey(p => p.ActorId);
+
+            builder.HasOne(p => p.Movie).WithMany(m => m.MoviesActors).HasForeignKey(p => p.MovieId);
         }
     }
 }

@@ -11,6 +11,11 @@ namespace EFCoreMoviesWebApi.Entities.Configurations
             //no need to specify this because already configure in convetion function above
             //modelBuilder.Entity<Actor>().Property(p => p.DataOfBirth).HasColumnType("date");
             builder.Property(p => p.Biography).HasColumnType("nvarchar(max)");
+
+            //builder.Property(p => p.Name).HasField("_name");
+
+            //to ignore property from class
+            //builder.Ignore(p => p.Age);
         }
     }
 }

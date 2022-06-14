@@ -19,6 +19,12 @@ namespace EFCoreMoviesWebApi.Entities.Configurations
             builder.Property(p => p.Name)
                 //.HasColumnName("GenreName")
                 .HasMaxLength(150).IsRequired();
+
+            builder.HasQueryFilter(g => !g.IsDeleted);
+
+            builder.HasIndex(p => p.Name).IsUnique().HasFilter("IsDeleted = 'false'");
+
+            builder.Property<DateTime>("CreatedDate").HasDefaultValueSql("GetDate()").HasColumnType("datetime2");
         }
     }
 }

@@ -12,10 +12,10 @@ namespace EFCoreMoviesWebApi.Entities
         public string PosterURl { get; set; }
 
         //many to many relation with skip stype
-        public HashSet<Genre> Genres { get; set; }
+        public List<Genre> Genres { get; set; }
         //many to many relation with skip stype
-        public HashSet<CinemaHall> CinemaHalls { get; set; }
+        public List<CinemaHall> CinemaHalls { get; set; }
         ////many to many relation with non-skip stype
-        public HashSet<MovieActor> MovieActors { get; set; }
+        public List<MovieActor> MoviesActors { get; set; }
     }
 }

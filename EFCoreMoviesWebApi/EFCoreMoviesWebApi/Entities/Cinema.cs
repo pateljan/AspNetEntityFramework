@@ -15,5 +15,9 @@ namespace EFCoreMoviesWebApi.Entities
 
         //Nevigation Property to indicate the relation with other table, one to many relation
         public HashSet<CinemaHall> CinemaHalls { get; set; }
+
+        public Address Address { get; set; }
+
+        public CinemaDetail CinemaDetail { get; set; }
     }
 }
