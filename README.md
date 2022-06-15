@@ -22,3 +22,5 @@ https://docs.microsoft.com/en-us/ef/core/cli/dotnet
 1. dotnet ef migrations add initial
 2. dotnet ef database update
    
+# Database First Command
+1. scaffold-DbContext -Connection name=DafultConnection -Provider Microsoft.EntityFrameworkcore.SqlServer -OutputDir Models -Force
