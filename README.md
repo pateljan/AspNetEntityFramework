@@ -17,6 +17,13 @@ https://docs.microsoft.com/en-us/ef/core/cli/dotnet
 1. Add-Migration Initial   
 2. Update-Database
 3. Remove-Migration
+4. Remove-Migration -Force
+5. Get-Migration
+6. Get-Help -details/full
+7. Migration-Bundles
+8. Script-Migraion
+9. Script-Migration -Identpotent
+10. Optimize-Database  // for generating compile models
 
 # CLI Commands
 1. dotnet ef migrations add initial
