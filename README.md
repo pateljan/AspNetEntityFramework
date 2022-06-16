@@ -24,6 +24,7 @@ https://docs.microsoft.com/en-us/ef/core/cli/dotnet
 8. Script-Migraion
 9. Script-Migration -Identpotent
 10. Optimize-Database  // for generating compile models
+11. Add-Migration Initial -Project ProjectthatContainDbContext
 
 # CLI Commands
 1. dotnet ef migrations add initial
